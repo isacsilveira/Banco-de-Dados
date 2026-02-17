@@ -1,0 +1,19 @@
+UPDATE Cliente
+    SET Id = 'Id',
+        Nome = 'Nome',
+        Sobrenome = 'Sobrenome',
+        Endereco = 'Endereco',
+        Aniversario = 'Aniversario',
+        Telefone = 'Telefone'
+
+WHERE Endereco = 'Rua A'; /*Não é uma boa prática, o certo é filtrar pelo Id(primary key)*/
+
+UPDATE Cliente
+    SET
+        Nome = 'Nome',
+        Sobrenome = 'Sobrenome',
+        Endereco = 'Endereco',
+        Aniversario = '1999-07-13',
+        Telefone = 'Telefone'
+
+WHERE Id = 2;
